@@ -1,9 +1,9 @@
 <?php
 
-namespace Studio\Totem\Events;
+namespace Wabi\Totem\Events;
 
-use Studio\Totem\Task;
-use Studio\Totem\Notifications\TaskCompleted;
+use Wabi\Totem\Task;
+use Wabi\Totem\Notifications\TaskCompleted;
 
 class Executed extends Event
 {

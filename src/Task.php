@@ -1,10 +1,10 @@
 <?php
 
-namespace Studio\Totem;
+namespace Wabi\Totem;
 
 use Carbon\Carbon;
 use Cron\CronExpression;
-use Studio\Totem\Traits\HasFrequencies;
+use Wabi\Totem\Traits\HasFrequencies;
 use Illuminate\Notifications\Notifiable;
 
 class Task extends TotemModel

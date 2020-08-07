@@ -1,12 +1,12 @@
 <?php
 
-namespace Studio\Totem\Http\Controllers;
+namespace Wabi\Totem\Http\Controllers;
 
-use Studio\Totem\Task;
-use Studio\Totem\Totem;
-use Studio\Totem\Frequency;
-use Studio\Totem\Contracts\TaskInterface;
-use Studio\Totem\Http\Requests\TaskRequest;
+use Wabi\Totem\Task;
+use Wabi\Totem\Totem;
+use Wabi\Totem\Frequency;
+use Wabi\Totem\Contracts\TaskInterface;
+use Wabi\Totem\Http\Requests\TaskRequest;
 
 class TasksController extends Controller
 {

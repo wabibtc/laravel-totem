@@ -1,9 +1,9 @@
 <?php
 
-namespace Studio\Totem\Tests\Feature;
+namespace Wabi\Totem\Tests\Feature;
 
-use Studio\Totem\Task;
-use Studio\Totem\Tests\TestCase;
+use Wabi\Totem\Task;
+use Wabi\Totem\Tests\TestCase;
 
 class EditTaskTest extends TestCase
 {
@@ -33,7 +33,7 @@ class EditTaskTest extends TestCase
         $task = factory(Task::class)->create();
         $response = $this->post(route('totem.task.edit', $task), [
             'description'         => 'List All Scheduled Commands',
-            'command'             => 'Studio\Totem\Console\Commands\ListSchedule',
+            'command'             => 'Wabi\Totem\Console\Commands\ListSchedule',
             'type'                => 'cron',
             'expression'          => '5 * * * *',
         ]);

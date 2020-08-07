@@ -1,9 +1,9 @@
 <?php
 
-namespace Studio\Totem\Http\Controllers;
+namespace Wabi\Totem\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Studio\Totem\Contracts\TaskInterface;
+use Wabi\Totem\Contracts\TaskInterface;
 
 class ActiveTasksController extends Controller
 {

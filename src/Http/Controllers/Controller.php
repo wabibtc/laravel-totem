@@ -1,8 +1,8 @@
 <?php
 
-namespace Studio\Totem\Http\Controllers;
+namespace Wabi\Totem\Http\Controllers;
 
-use Studio\Totem\Http\Middleware\Authenticate;
+use Wabi\Totem\Http\Middleware\Authenticate;
 use Illuminate\Routing\Controller as BaseController;
 
 class Controller extends BaseController

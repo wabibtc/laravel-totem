@@ -1,6 +1,6 @@
 <?php
 
-namespace Studio\Totem\Http\Requests;
+namespace Wabi\Totem\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

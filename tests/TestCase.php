@@ -1,17 +1,17 @@
 <?php
 
-namespace Studio\Totem\Tests;
+namespace Wabi\Totem\Tests;
 
 use Exception;
-use Studio\Totem\User;
-use Studio\Totem\Totem;
+use Wabi\Totem\User;
+use Wabi\Totem\Totem;
 use Collective\Html\FormFacade;
 use Collective\Html\HtmlFacade;
 use Illuminate\Support\Facades\Auth;
 use Collective\Html\HtmlServiceProvider;
 use Orchestra\Testbench\Exceptions\Handler;
 use Illuminate\Contracts\Debug\ExceptionHandler;
-use Studio\Totem\Providers\TotemServiceProvider;
+use Wabi\Totem\Providers\TotemServiceProvider;
 
 class TestCase extends \Orchestra\Testbench\TestCase
 {

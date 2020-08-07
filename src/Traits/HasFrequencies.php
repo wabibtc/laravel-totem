@@ -1,9 +1,9 @@
 <?php
 
-namespace Studio\Totem\Traits;
+namespace Wabi\Totem\Traits;
 
 use Closure;
-use Studio\Totem\Frequency;
+use Wabi\Totem\Frequency;
 use Illuminate\Console\Scheduling\ManagesFrequencies;
 
 trait HasFrequencies

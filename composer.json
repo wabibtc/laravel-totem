@@ -36,8 +36,8 @@
   },
   "autoload": {
     "psr-4": {
-      "Studio\\Totem\\": "src/",
-      "Studio\\Totem\\Tests\\": "tests/"
+      "Wabi\\Totem\\": "src/",
+      "Wabi\\Totem\\Tests\\": "tests/"
     }
   },
   "extra": {
@@ -47,7 +47,7 @@
     },
     "laravel": {
       "providers": [
-        "Studio\\Totem\\Providers\\TotemServiceProvider"
+        "Wabi\\Totem\\Providers\\TotemServiceProvider"
       ]
     }
   },

@@ -1,9 +1,9 @@
 <?php
 
-namespace Studio\Totem\Tests\Feature;
+namespace Wabi\Totem\Tests\Feature;
 
-use Studio\Totem\Task;
-use Studio\Totem\Tests\TestCase;
+use Wabi\Totem\Task;
+use Wabi\Totem\Tests\TestCase;
 
 class ViewTaskTest extends TestCase
 {
@@ -15,7 +15,7 @@ class ViewTaskTest extends TestCase
         $response = $this->get(route('totem.task.view', $task));
         $response->assertStatus(200);
         $response->assertSee($task->description);
-        $response->assertSee('Studio\Totem\Console\Commands\ListSchedule');
+        $response->assertSee('Wabi\Totem\Console\Commands\ListSchedule');
         $response->assertSee($task->expression);
     }
 

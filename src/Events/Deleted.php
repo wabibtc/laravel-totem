@@ -1,6 +1,6 @@
 <?php
 
-namespace Studio\Totem\Events;
+namespace Wabi\Totem\Events;
 
 class Deleted extends Event
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Studio\Totem\Traits;
+namespace Wabi\Totem\Traits;
 
-use Studio\Totem\Parameter;
+use Wabi\Totem\Parameter;
 
 trait HasParameters
 {

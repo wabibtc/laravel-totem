@@ -1,9 +1,9 @@
 <?php
 
-namespace Studio\Totem\Listeners;
+namespace Wabi\Totem\Listeners;
 
 use Illuminate\Container\Container;
-use Studio\Totem\Contracts\TaskInterface;
+use Wabi\Totem\Contracts\TaskInterface;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
 class Listener implements ShouldQueue

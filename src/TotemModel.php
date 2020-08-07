@@ -1,6 +1,6 @@
 <?php
 
-namespace Studio\Totem;
+namespace Wabi\Totem;
 
 use Illuminate\Database\Eloquent\Model;
 

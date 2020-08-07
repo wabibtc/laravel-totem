@@ -1,10 +1,10 @@
 <?php
 
-namespace Studio\Totem\Tests\Feature;
+namespace Wabi\Totem\Tests\Feature;
 
-use Studio\Totem\Task;
-use Studio\Totem\Result;
-use Studio\Totem\Tests\TestCase;
+use Wabi\Totem\Task;
+use Wabi\Totem\Result;
+use Wabi\Totem\Tests\TestCase;
 
 class ViewDashboardTest extends TestCase
 {

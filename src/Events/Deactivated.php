@@ -1,6 +1,6 @@
 <?php
 
-namespace Studio\Totem\Events;
+namespace Wabi\Totem\Events;
 
 class Deactivated extends Event
 {

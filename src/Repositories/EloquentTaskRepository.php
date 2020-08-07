@@ -1,19 +1,19 @@
 <?php
 
-namespace Studio\Totem\Repositories;
+namespace Wabi\Totem\Repositories;
 
-use Studio\Totem\Task;
-use Studio\Totem\Events\Created;
-use Studio\Totem\Events\Deleted;
-use Studio\Totem\Events\Updated;
-use Studio\Totem\Events\Creating;
-use Studio\Totem\Events\Executed;
-use Studio\Totem\Events\Updating;
-use Studio\Totem\Events\Activated;
-use Studio\Totem\Events\Deactivated;
+use Wabi\Totem\Task;
+use Wabi\Totem\Events\Created;
+use Wabi\Totem\Events\Deleted;
+use Wabi\Totem\Events\Updated;
+use Wabi\Totem\Events\Creating;
+use Wabi\Totem\Events\Executed;
+use Wabi\Totem\Events\Updating;
+use Wabi\Totem\Events\Activated;
+use Wabi\Totem\Events\Deactivated;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Artisan;
-use Studio\Totem\Contracts\TaskInterface;
+use Wabi\Totem\Contracts\TaskInterface;
 
 class EloquentTaskRepository implements TaskInterface
 {

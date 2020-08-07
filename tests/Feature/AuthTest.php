@@ -1,10 +1,10 @@
 <?php
 
-namespace Studio\Totem\Tests\Feature;
+namespace Wabi\Totem\Tests\Feature;
 
-use Studio\Totem\Totem;
-use Studio\Totem\Tests\TestCase;
-use Studio\Totem\Http\Middleware\Authenticate;
+use Wabi\Totem\Totem;
+use Wabi\Totem\Tests\TestCase;
+use Wabi\Totem\Http\Middleware\Authenticate;
 
 class AuthTest extends TestCase
 {

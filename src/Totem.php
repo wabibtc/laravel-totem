@@ -1,6 +1,6 @@
 <?php
 
-namespace Studio\Totem;
+namespace Wabi\Totem;
 
 use Closure;
 use Illuminate\Support\Facades\Artisan;

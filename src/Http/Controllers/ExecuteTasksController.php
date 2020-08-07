@@ -1,8 +1,8 @@
 <?php
 
-namespace Studio\Totem\Http\Controllers;
+namespace Wabi\Totem\Http\Controllers;
 
-use Studio\Totem\Contracts\TaskInterface;
+use Wabi\Totem\Contracts\TaskInterface;
 
 class ExecuteTasksController extends Controller
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Studio\Totem\Events;
+namespace Wabi\Totem\Events;
 
-use Studio\Totem\Task;
+use Wabi\Totem\Task;
 use Illuminate\Broadcasting\Channel;
 use Illuminate\Broadcasting\PrivateChannel;
 

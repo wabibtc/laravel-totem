@@ -1,15 +1,15 @@
 <?php
 
-namespace Studio\Totem\Listeners;
+namespace Wabi\Totem\Listeners;
 
-use Studio\Totem\Events\Event;
+use Wabi\Totem\Events\Event;
 
 class BustCache extends Listener
 {
     /**
      * Handle the event.
      *
-     * @param  \Studio\Totem\Events\Event  $event
+     * @param  \Wabi\Totem\Events\Event  $event
      */
     public function handle(Event $event)
     {

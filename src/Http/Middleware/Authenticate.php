@@ -1,8 +1,8 @@
 <?php
 
-namespace Studio\Totem\Http\Middleware;
+namespace Wabi\Totem\Http\Middleware;
 
-use Studio\Totem\Totem;
+use Wabi\Totem\Totem;
 
 class Authenticate
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Studio\Totem\Tests\Feature;
+namespace Wabi\Totem\Tests\Feature;
 
-use Studio\Totem\Task;
-use Studio\Totem\Tests\TestCase;
+use Wabi\Totem\Task;
+use Wabi\Totem\Tests\TestCase;
 
 class CompileParametersTest extends TestCase
 {

@@ -1,16 +1,16 @@
 <?php
 
-namespace Studio\Totem\Providers;
+namespace Wabi\Totem\Providers;
 
 use Cron\CronExpression;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Validator;
-use Studio\Totem\Contracts\TaskInterface;
-use Studio\Totem\Console\Commands\ListSchedule;
-use Studio\Totem\Console\Commands\PublishAssets;
-use Studio\Totem\Repositories\EloquentTaskRepository;
+use Wabi\Totem\Contracts\TaskInterface;
+use Wabi\Totem\Console\Commands\ListSchedule;
+use Wabi\Totem\Console\Commands\PublishAssets;
+use Wabi\Totem\Repositories\EloquentTaskRepository;
 
 class TotemServiceProvider extends ServiceProvider
 {

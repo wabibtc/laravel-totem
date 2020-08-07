@@ -1,6 +1,6 @@
 <?php
 
-namespace Studio\Totem\Http\Controllers;
+namespace Wabi\Totem\Http\Controllers;
 
 class DashboardController extends Controller
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Studio\Totem;
+namespace Wabi\Totem;
 
-use Studio\Totem\Traits\HasParameters;
+use Wabi\Totem\Traits\HasParameters;
 
 class Frequency extends TotemModel
 {

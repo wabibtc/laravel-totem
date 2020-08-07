@@ -1,6 +1,6 @@
 <?php
 
-namespace Studio\Totem;
+namespace Wabi\Totem;
 
 class Parameter extends TotemModel
 {

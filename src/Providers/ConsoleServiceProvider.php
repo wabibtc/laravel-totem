@@ -1,9 +1,9 @@
 <?php
 
-namespace Studio\Totem\Providers;
+namespace Wabi\Totem\Providers;
 
-use Studio\Totem\Events\Executed;
-use Studio\Totem\Events\Executing;
+use Wabi\Totem\Events\Executed;
+use Wabi\Totem\Events\Executing;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Console\Scheduling\Schedule;
 
