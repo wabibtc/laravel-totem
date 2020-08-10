@@ -20,7 +20,12 @@ class Executed extends Event
         $time_elapsed_secs = microtime(true) - $started;
 
         if (file_exists(storage_path($task->getMutexName()))) {
-            $output = file_get_contents(storage_path($task->getMutexName()));
+            $output = trim(file_get_contents(storage_path($task->getMutexName())));
+            if (ends_with($output, "success@end")) {
+                $task->fill(['last_status' => 1])->save();
+            } else {
+                $task->fill(['last_status' => 2])->save();
+            }
 
             $task->results()->create([
                 'duration'  => $time_elapsed_secs * 1000,

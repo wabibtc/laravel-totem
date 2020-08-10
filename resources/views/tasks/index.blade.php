@@ -23,12 +23,13 @@
                 <th>Average Runtime</th>
                 <th>Last Run</th>
                 <th>Next Run</th>
+                <th>Last Status</th>
                 <th class="uk-text-center">Execute</th>
             </tr>
         </thead>
         <tbody>
             @forelse($tasks as $task)
-                <tr class="{{$task->is_active ?: 'uk-text-danger'}}">
+                <tr class="{{$task->is_active ? ( $task->last_status == 1 ? :'uk-text-warning'): 'uk-text-danger'}}">
                     <td>
                         <a href="{{route('totem.task.view', $task)}}">
                             {{str_limit($task->description, 30)}}
@@ -53,6 +54,10 @@
                     <td>
                         {{$task->upcoming}}
                         <span class="uk-float-right uk-hidden@s uk-text-muted">Next Run</span>
+                    </td>
+                    <td>
+                        {{$task->last_status}}
+                        <span class="uk-float-right uk-hidden@s uk-text-muted">Last status</span>
                     </td>
                     <td class="uk-text-center@m">
                         <execute-button :data-task="{{$task}}" url="{{route('totem.task.execute', $task)}}" icon-name="play" button-class="uk-button-link"></execute-button>

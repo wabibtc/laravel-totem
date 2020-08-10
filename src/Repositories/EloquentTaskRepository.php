@@ -179,9 +179,15 @@ class EloquentTaskRepository implements TaskInterface
         $start = microtime(true);
         try {
             Artisan::call($task->command, $task->compileParameters());
-
-            file_put_contents(storage_path($task->getMutexName()), Artisan::output());
+            $output = trim(Artisan::output());
+            if (ends_with($output, "success@end")) {
+                $task->fill(['last_status' => 1])->save();
+            } else {
+                $task->fill(['last_status' => 2])->save();
+            }
+            file_put_contents(storage_path($task->getMutexName()), $output);
         } catch (\Exception $e) {
+            $task->fill(['last_status' => 1])->save();
             file_put_contents(storage_path($task->getMutexName()), $e->getMessage());
         }
 
